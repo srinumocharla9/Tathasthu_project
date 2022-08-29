@@ -1,0 +1,211 @@
+/********************TAG containers *********************************/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width:90%;
+    margin:auto;
+    height:10vh;
+    display:flex;
+    align-items: center;
+}
+nav{
+    flex:2;
+}
+section{
+    width: 90%;
+    margin:auto;
+    min-height:80vh; 
+    align-items: center;
+}
+main{
+    align-items: center;
+    display: flex;
+    margin:auto;
+}
+button{
+    width: 150px;
+    height: 50px;
+}
+/*********************************** Class Containers **********************/
+
+.logocontainer{
+    flex:1;
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.cart{
+    flex:1;
+    justify-content: flex-end;
+}
+
+.logocontainer,
+.nav-links,
+.cart{
+    display:flex;
+}
+.nav-link{
+    text-decoration: none;
+    color: #525252;
+    font-size: 22px;
+}
+.presentation,
+.coverimage{
+    display:flex;
+}
+.introduction{
+    flex:1;
+}
+.logo{
+    font-weight: 400;
+    margin:7px;
+}
+.introtext h1{
+    font-size: 54px;
+    font-weight: 500;
+    background: linear-gradient(to right,#494964,#6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:'Poppins', sans-serif; ;
+}
+.introtext p{
+    font-size: 32px;
+    margin:15px 0px 0px 0px;
+    color:#585772;
+}
+.cta{
+    padding: 50px 0px 0px 0px;
+}
+.size{
+    color:#c36cbb;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #c36cbb;
+    cursor: pointer;
+
+}
+.add{
+    font-size: 16px;
+    cursor: pointer;
+    background:#c36cbb;
+    margin:0px 0px 0px 30px;
+    color:white;
+    border:none;
+}
+.presentation{
+    display: flex;
+    width: 90%;
+    margin:auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.coverimage{
+    flex:1;
+    display:flex;
+    justify-content: center;
+    height:60vh;
+}
+.laptop{
+    height:100%;
+    filter:drop-shadow(0px 5px 3px black);
+    animation:drop 1.5s ease;
+}
+.bigcircle{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.5;
+    height: 80%;
+}
+.midcircle{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.45;
+    height: 60%;
+}
+.smallcircle{
+    position: absolute;
+    top:55%;
+    right: 55%;
+    z-index: -1;
+    opacity: 0.7;
+    height: 40%;
+}
+.laptopselect{
+    position: absolute;
+    right: 22%;
+    top:80%;
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+}
+
+@keyframes drop {
+    0% {
+        opacity:0;
+        transform:translateY(-45px);
+    }
+    100% {
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
+
+@media screen and (max-width:1024px){
+    .presentation{
+        flex-direction: column;
+    }
+    .introduction{
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .introtext h1{
+        font-size:30px;
+    }
+    .introtext p{
+        font-size: 18px;
+    }
+    .cta{
+        padding:10px 0px 0px 0px;
+    }
+    .laptopselect{
+        bottom:5%;
+        right:50%;
+        width:50%;
+        transform:translate(50%,5%);
+    }
+    .laptop{
+        height:70%;
+        width:100%;
+    }
+    .smallcircle,
+    .midcircle,
+    .bigcircle{
+        opacity:0.2;
+    }
+    .laptopselect{
+        width: 2%;
+    }
+   
+    
+}
+
+
+    
+
